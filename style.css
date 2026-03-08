@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    padding-top: 30px;
+}
+
+@media (max-width: 600px){
+
+    .logo {
+        width: 33em;
+        height: 7.5em;
+        background-color: #D9D9D9;
+        margin: auto;
+        text-align: center;
+        padding: 2.7em;
+        font-size: 0.6em;
+    }
+
+    .mainContainer {
+        width: 20em;
+        margin: auto;
+    }
+
+    .organizarInput {
+        display: flex;
+        flex-direction: column;
+        color: #270094;  
+    }
+
+    input, select {
+        border: solid 2px #270094;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1em;
+        padding: 0.7em;
+    }
+
+    .campoDuplicado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inputMedio {
+        width: 12.3em;
+    }
+
+    .inputPequeno {
+        width: 9.1em;
+    }
+
+    .inputMini {
+        width: 6.5em;
+    }
+
+    .obrigatorio {
+        color: red;
+    }
+
+    #dadosCotato, #dadosGerais, #dadosEndereco {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+    }
+
+    #dadosGerais {
+        margin-top: 2em;
+    }
+
+    #dadosContato {
+        margin:3em 0 3em 0;
+    }
+
+    #botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3em 0 3em 0;
+    }
+
+    #botoes button {
+        width: 10.5em;
+        height: 3em;
+        border-radius: 3px;
+        border: none;
+    }
+
+    .salvar {
+        background: radial-gradient( #5b65ec, #2f37b5);
+        color: white;
+        font-weight: bold;
+    }
+    
+    .excluir {
+        background: radial-gradient(#EEEEEE, #888888);
+        font-weight: bold;
+    }
+}

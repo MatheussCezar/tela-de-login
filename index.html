@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MataDados</title>
+</head>
+<body>
+    <section class="logo">
+        <h1>Matadados</h1>
+    </section>
+
+    <section class="mainContainer">
+        <form action="">
+            <div id="dadosGerais">
+                <div class="organizarInput">
+                    <label for="Nome" >Nome<span class="obrigatorio">*</span></label>
+                    <input type="text" id="Nome" required>
+                </div>
+                <div class="organizarInput">
+                    <label for="dataNasc">Data de Nascimento<span class="obrigatorio">*</span></label>
+                    <input type="text" inputmode="numeric" id="dataNasc" class="inputMedio" placeholder="dd/mm/aaaa" required>
+                </div>
+                <div class="campoDuplicado">
+                    <div class="organizarInput">
+                        <label for="RG">RG<span class="obrigatorio">*</span></label>
+                        <input type="text" id="RG" class="inputPequeno" required placeholder="xx.xxx.xxx-xx">
+                    </div>
+                    <div class="organizarInput">
+                        <label for="CPF">CPF<span class="obrigatorio">*</span></label>
+                        <input type="text" id="CPF" class="inputPequeno" required placeholder="xxx.xxx.xxx-xx">
+                </div>
+                </div>
+                <div class="campoDuplicado">
+                    <div class="organizarInput">
+                        <label for="genero">Gênero</label>
+                        <select name="genero" id="genero" class="inputPequeno">
+                            <option value=""></option>
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                            <option value="">Outro</option>
+                        </select>
+                    </div>
+                    <div class="organizarInput">
+                        <label for="estadoCivil">Estado Civil</label>
+                        <select name="estadoCivil" id="estadoCivil" required class="inputPequeno ">
+                            <option value=""></option>
+                            <option value="Casado">Casado</option>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Viuvo">Viuvo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dadosContato">
+                <div class="organizarInput">
+                    <label for="eMail">E-mail<span class="obrigatorio">*</span></label>
+                    <input type="email" name="eMail" id="eMail" required placeholder="coloqueseuemail@gmail.com">
+                </div>
+                <div class="organizarInput">
+                    <label for="telefone">N° de Telefone<span class="obrigatorio">*</span></label>
+                    <input type="tel" name="telefone" id="telefone" class="inputMedio" placeholder="+55 (xx) x xxxx-xxxx">
+                </div>
+            </div>
+
+            <div id="dadosEndereco">
+                <div class="organizarInput">
+                    <label for="CEP">CEP<span class="obrigatorio">*</span></label>
+                    <input type="text" inputmode="numeric" name="CEP" id="CEP" class="inputMedio" placeholder="xxxxx-xxx">
+                </div>
+                <div class="campoDuplicado">
+                    <div class="organizarInput">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" class="inputMedio">
+                    </div>
+                    <div class="organizarInput">
+                        <label for="numeroCasa">N° da Casa<span class="obrigatorio">*</span></label>
+                        <input type="number" name="numeroCasa" id="numeroCasa" class="inputMini">
+                    </div>
+                </div>
+                <div class="organizarInput">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento">
+                </div>
+                <div class="organizarInput">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro"></input>
+                </div>
+                <div class="campoDuplicado">
+                    <div class="organizarInput">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="inputMedio"></input>
+                    </div>
+                    <div class="organizarInput">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado" class="inputMini">
+                            <option value=""></option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AM">AM</option>
+                            <option value="AP">AP</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MG">MG</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="PR">PR</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="botoes">
+                <button class="salvar">Salvar</button>
+                <button class="excluir">Excluir</button>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
