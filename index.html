@@ -26,11 +26,11 @@
                 <div class="campoDuplicado">
                     <div class="organizarInput">
                         <label for="RG">RG<span class="obrigatorio">*</span></label>
-                        <input type="text" id="RG" class="inputPequeno" required placeholder="xx.xxx.xxx-xx">
+                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx">
                     </div>
                     <div class="organizarInput">
                         <label for="CPF">CPF<span class="obrigatorio">*</span></label>
-                        <input type="text" id="CPF" class="inputPequeno" required placeholder="xxx.xxx.xxx-xx">
+                        <input type="text"  class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx">
                 </div>
                 </div>
                 <div class="campoDuplicado">
@@ -47,10 +47,27 @@
                         <label for="estadoCivil">Estado Civil</label>
                         <select name="estadoCivil" id="estadoCivil" required class="inputPequeno ">
                             <option value=""></option>
-                            <option value="Casado">Casado</option>
-                            <option value="Solteiro">Solteiro</option>
-                            <option value="Viuvo">Viuvo</option>
+                            <option value="1">Casado</option>
+                            <option value="2">Solteiro</option>
+                            <option value="3">Viuvo</option>
                         </select>
+                    </div>
+                </div>
+                <div id="conjuge" style="display: none;">
+                    <h2>Dados do Cônjuge</h2>
+                    <div class="organizarInput">
+                        <label for="Nome" >Nome<span class="obrigatorio">*</span></label>
+                        <input type="text" id="Nome" required>
+                    </div>
+                    <div class="campoDuplicado">
+                       <div class="organizarInput">
+                        <label for="RG">RG<span class="obrigatorio">*</span></label>
+                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx">
+                        </div>
+                        <div class="organizarInput">
+                            <label for="CPF">CPF<span class="obrigatorio">*</span></label>
+                            <input type="text" class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx">
+                        </div>
                     </div>
                 </div>
             </div>

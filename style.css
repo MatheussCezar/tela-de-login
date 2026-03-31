@@ -74,6 +74,17 @@ body {
         margin-top: 2em;
     }
 
+    #conjuge h2 {
+        color: red;
+        font-size: 1em;
+        font-weight: 450;
+        margin-bottom: 1em;
+    }
+
+    #conjuge {
+        margin-top: 20px;
+    }
+
     #dadosContato {
         margin:3em 0 3em 0;
     }
