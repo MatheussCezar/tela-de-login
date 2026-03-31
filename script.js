@@ -49,7 +49,13 @@ estadoCivil.addEventListener("change", function(){
     }
 })
 
+document.getElementById("dataNasc").addEventListener('input', function(e) { //Formata data dd/mm/aaaa
+    let v = e.target.value.replace(/\D/g, '');
+    v = v.replace(/(\d{2})(\d)/, '$1/$2');    
+    v = v.replace(/(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');
 
+    e.target.value = v;
+});
 
 document.querySelectorAll(".CPF").forEach(element => {
     element.addEventListener('input', function(e) { //Deixa o espaçamento do CPF ". e -"
@@ -71,7 +77,7 @@ document.querySelectorAll(".RG").forEach(element => {
     });
 });
 
-document.getElementById("telefone").addEventListener('input', function(e) { // Deixa o númerocertinho "+55 (99) 9 9999-9999"
+document.getElementById("telefone").addEventListener('input', function(e) { //Deixa o númerocertinho "+55 (99) 9 9999-9999"
     let v = e.target.value.replace(/\D/g, '');
     v = v.replace(/^(\d{2})(\d)/, '+$1 ($2');
     v = v.replace(/^(\+\d{2} \(\d{2})(\d)/, '$1) $2');
@@ -79,7 +85,7 @@ document.getElementById("telefone").addEventListener('input', function(e) { // D
     e.target.value = v;
 });
 
-document.getElementById("CEP").addEventListener('input', function(e) { // Deixa o CEP com "-"
+document.getElementById("CEP").addEventListener('input', function(e) { //Deixa o CEP com "-"
     let v = e.target.value.replace(/\D/g, ''); 
     v = v.replace(/(\d{5})(\d)/, '$1-$2'); 
     e.target.value = v;
