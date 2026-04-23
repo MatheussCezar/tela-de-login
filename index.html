@@ -21,16 +21,16 @@
                 </div>
                 <div class="organizarInput">
                     <label for="dataNasc">Data de Nascimento<span class="obrigatorio">*</span></label>
-                    <input type="text" inputmode="numeric" id="dataNasc" class="inputMedio" placeholder="dd/mm/aaaa" required>
+                    <input type="text" inputmode="numeric" id="dataNasc" class="inputMedio" placeholder="dd/mm/aaaa" maxlength="10" required>
                 </div>
                 <div class="campoDuplicado">
                     <div class="organizarInput">
                         <label for="RG">RG<span class="obrigatorio">*</span></label>
-                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx">
+                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx" maxlength="13" required>
                     </div>
                     <div class="organizarInput">
                         <label for="CPF">CPF<span class="obrigatorio">*</span></label>
-                        <input type="text"  class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx">
+                        <input type="text"  class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
                 </div>
                 </div>
                 <div class="campoDuplicado">
@@ -62,11 +62,11 @@
                     <div class="campoDuplicado">
                        <div class="organizarInput">
                         <label for="RG">RG<span class="obrigatorio">*</span></label>
-                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx">
+                        <input type="text" class="inputPequeno RG" required placeholder="xx.xxx.xxx-xx" maxlength="13" required>
                         </div>
                         <div class="organizarInput">
                             <label for="CPF">CPF<span class="obrigatorio">*</span></label>
-                            <input type="text" class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx">
+                            <input type="text" class="inputPequeno CPF" required placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
                         </div>
                     </div>
                 </div>
@@ -79,14 +79,14 @@
                 </div>
                 <div class="organizarInput">
                     <label for="telefone">N° de Telefone<span class="obrigatorio">*</span></label>
-                    <input type="tel" name="telefone" id="telefone" class="inputMedio" placeholder="+55 (xx) x xxxx-xxxx">
+                    <input type="tel" name="telefone" id="telefone" class="inputMedio" placeholder="+55 (xx) x xxxx-xxxx" maxlength="20" required>
                 </div>
             </div>
 
             <div id="dadosEndereco">
                 <div class="organizarInput">
                     <label for="CEP">CEP<span class="obrigatorio">*</span></label>
-                    <input type="text" inputmode="numeric" name="CEP" id="CEP" class="inputMedio" placeholder="xxxxx-xxx">
+                    <input type="text" inputmode="numeric" name="CEP" id="CEP" class="inputMedio" placeholder="xxxxx-xxx" maxlength="9" required>
                 </div>
                 <div class="campoDuplicado">
                     <div class="organizarInput">
